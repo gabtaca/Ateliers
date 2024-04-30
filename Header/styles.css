@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    background-color: beige;
+    width: 100%;
+}
+.header_home{
+    width: 100%;
+    background-color: rgb(155, 173, 255);
+    height: 20%;
+}
+
+.header_nav{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    gap:30px;
+    visibility: visible;
+    padding-bottom: 10px;
+}
+
+.header_nav > a{
+    border: solid blue;
+    border-radius: 20px;
+    background-color: rgb(175, 229, 253);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #65668f; 
+    box-shadow: 5px 5px 15px 5px #5d8dc0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.burger{
+    visibility: hidden;
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    border: solid blue;
+    border-radius: 20px;
+    background-color: rgb(175, 229, 253);
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #65668f; 
+    box-shadow: 5px 5px 15px 5px #5d8dc0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.top_message{
+    background-color: black;
+    border: solid yellow;
+    color: yellow;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pop-up_top{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_titre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titre{
+    font-family: "Pirata One", system-ui;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(32, 26, 26);
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    margin-bottom: 0px;
+}
+
+.titre_slogan{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slogan{
+    display: flex;
+    align-self: center;
+    align-content: start;
+    margin-top: 0px;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(80, 79, 79);
+}
+
+.logo_img{
+    max-width: 150px;
+}
+
+.burger_logo{
+    width: 25px;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 769px) {
+    .header_nav {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header_nav {
+        visibility: hidden;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .logo_img{
+        max-width: 100px;
+    }
+    .burger {
+        visibility: visible;
+        align-self: flex-end;
+        margin-right: 20px;
+    }
+    .burger_logo {
+        visibility: visible;
+    }
+    .top_message{
+        font-size: medium;
+    }
+}
+
